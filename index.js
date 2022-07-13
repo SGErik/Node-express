@@ -12,11 +12,18 @@ function ordenar (){
         if(pedirEntrada.toUpperCase() != "SAIR"){
             arr.push(pedirEntrada)
             pedirEntrada = entrada("Insira a proriedade do CSS!")
+            
+        }else{
+            const resultado = arr.sort().join("\n")
+            console.log(resultado)
+            return false
+
         }
-        let resultado = arr.sort()
-        console.log(resultado)
         
-        }
+        
+    }
+
+        
 }
 
 
